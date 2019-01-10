@@ -1,0 +1,27 @@
+{
+    "name": "genial/blog",
+    "description": "A complete blog package",
+    "authors": [
+        {
+            "name": "Sanjeev Kumar",
+            "email": "Sanjevscet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src\\database"
+        ],
+        "psr-4": {
+            "Genial\\Blog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+	      "providers": [
+		"Genial\\Blog\\BlogServiceProvider"
+	      ]
+        }
+    }
+}
